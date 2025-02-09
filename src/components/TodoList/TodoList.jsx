@@ -1,10 +1,10 @@
 import { TodoInfo } from '../TodoInfo';
 import '../../App.scss';
 // Add the required props
-export const TodoList = ({ todo }) => (
+export const TodoList = ({ todos }) => (
   <section className="TodoList">
-    {todo.map(e => (
-      <TodoInfo key={e.id} todo={e} />
+    {todos.map(e => (
+      <TodoInfo todo={e} key={e.id} />
     ))}
   </section>
 );
